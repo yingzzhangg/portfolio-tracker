@@ -118,22 +118,6 @@ Portfolio analytics teams at asset managers, pension funds, and wealth managemen
 
 This project replicates that workflow end-to-end using real market data over a period that includes COVID-19 (2020), the equity recovery (2021), and the Fed rate shock (2022).
 
----
-
-## Resume Bullet Points
-
-> Built a Python portfolio monitoring system that tracks active deviation, exposure attribution, and rebalancing impact across a six-constituent multi-asset mandate using six years of real ETF price data.
-
-> Designed a modular analytics pipeline — data ingestion, drift simulation, multi-schedule rebalancing engine, risk-adjusted performance reporting (CAGR, Sharpe, Sortino, Calmar) — producing five institutional-quality charts and structured CSV exports.
-
----
-
-## 30-Second Interview Explanation
-
-*"I built a portfolio analytics system in Python that tracks how a multi-asset portfolio drifts away from its target allocation over time. Starting from a defined strategic allocation — 40% S&P 500, 20% Nasdaq, bonds, gold, and international equities — I simulate what happens to the weights if you never rebalance, and compare that to monthly and quarterly rebalancing. The system computes the full set of institutional metrics including Sharpe, Sortino, and Calmar ratio, generates five charts, and exports everything to CSV. I structured it as a proper Python package so each module has one clear job: data loading, drift simulation, performance analytics, and visualization are all separate. It covers six years of real data including COVID and the 2022 rate shock, which makes the results meaningful."*
-
----
-
 ## Configuration
 
 All settings are in `portfolio_tracker/config.py`:
